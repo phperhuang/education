@@ -69,7 +69,7 @@ class LoginController extends Controller
      */
     public function authenticate($name, $password)
     {
-        if (Auth::attempt(['name' => $name, 'password' => $password])) {
+        if (Auth::attempt(['name' => $name, 'password' => $password], 'true')) {
             // 认证通过...
             return redirect()->to($this->redirectTo);
         }else{
