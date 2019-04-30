@@ -17,7 +17,7 @@
                             <div class="col-md-6">
                                 <input id="name" type="text" class="form-control @error('email') is-invalid @enderror" name="name" value="{{ old('name') }}" required autofocus>
 
-                                @error('email')
+                                @error('name')
                                     <span class="invalid-feedback" role="alert">
                                         <strong>{{ $message }}</strong>
                                     </span>
