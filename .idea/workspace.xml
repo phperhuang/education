@@ -2,7 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="43af5543-10fa-4c99-bbd1-0acf13f7fa75" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/app/AdminUsers.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/AdminUsers.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/Http/Controllers/Auth/LoginController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/Auth/LoginController.php" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -56,13 +55,13 @@
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
           <entry key="env" value="70" />
-          <entry key="php" value="1231" />
+          <entry key="php" value="1234" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
           <entry key="Blade" value="321" />
-          <entry key="PHP" value="910" />
+          <entry key="PHP" value="913" />
           <entry key="PLAIN_TEXT" value="70" />
         </counts>
       </usages-collector>
@@ -83,7 +82,7 @@
         <entry file="file://$PROJECT_DIR$/app/Http/Controllers/Auth/LoginController.php">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="466">
-              <caret line="94" column="36" lean-forward="true" selection-start-line="94" selection-start-column="36" selection-end-line="94" selection-end-column="36" />
+              <caret line="94" column="33" selection-start-line="94" selection-start-column="33" selection-end-line="94" selection-end-column="33" />
               <folding>
                 <element signature="e#45#81#0#PHP" expanded="true" />
               </folding>
@@ -94,8 +93,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/config/auth.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="441">
-              <caret line="52" column="10" lean-forward="true" selection-start-line="52" selection-start-column="10" selection-end-line="52" selection-end-column="10" />
+            <state relative-caret-position="141">
+              <caret line="40" column="29" lean-forward="true" selection-start-line="40" selection-start-column="29" selection-end-line="40" selection-end-column="29" />
             </state>
           </provider>
         </entry>
@@ -103,7 +102,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/User.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="475">
+            <state relative-caret-position="550">
               <caret line="34" column="24" lean-forward="true" selection-start-line="34" selection-start-column="24" selection-end-line="34" selection-end-column="24" />
               <folding>
                 <element signature="e#23#63#0#PHP" expanded="true" />
@@ -340,12 +339,12 @@
       <workItem from="1556246175268" duration="1325000" />
       <workItem from="1556248065103" duration="423000" />
       <workItem from="1556248627022" duration="83000" />
-      <workItem from="1556589705941" duration="13189000" />
+      <workItem from="1556589705941" duration="13269000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="15969000" />
+    <option name="totallyTimeSpent" value="16049000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1616" height="876" extended-state="6" />
@@ -519,16 +518,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/User.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="475">
-          <caret line="34" column="24" lean-forward="true" selection-start-line="34" selection-start-column="24" selection-end-line="34" selection-end-column="24" />
-          <folding>
-            <element signature="e#23#63#0#PHP" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/AdminUsers.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="400">
@@ -539,13 +528,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/config/auth.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="441">
-          <caret line="52" column="10" lean-forward="true" selection-start-line="52" selection-start-column="10" selection-end-line="52" selection-end-column="10" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/vendor/laravel/framework/src/Illuminate/Support/Facades/Auth.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="100">
@@ -553,10 +535,27 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/config/auth.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="141">
+          <caret line="40" column="29" lean-forward="true" selection-start-line="40" selection-start-column="29" selection-end-line="40" selection-end-column="29" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/User.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="550">
+          <caret line="34" column="24" lean-forward="true" selection-start-line="34" selection-start-column="24" selection-end-line="34" selection-end-column="24" />
+          <folding>
+            <element signature="e#23#63#0#PHP" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/app/Http/Controllers/Auth/LoginController.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="466">
-          <caret line="94" column="36" lean-forward="true" selection-start-line="94" selection-start-column="36" selection-end-line="94" selection-end-column="36" />
+          <caret line="94" column="33" selection-start-line="94" selection-start-column="33" selection-end-line="94" selection-end-column="33" />
           <folding>
             <element signature="e#45#81#0#PHP" expanded="true" />
           </folding>
