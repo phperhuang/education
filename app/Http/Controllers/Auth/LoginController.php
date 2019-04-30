@@ -6,6 +6,7 @@ use App\Http\Controllers\Controller;
 use Illuminate\Foundation\Auth\AuthenticatesUsers;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
+use Illuminate\Support\Facades\Session;
 
 class LoginController extends Controller
 {
@@ -20,7 +21,7 @@ class LoginController extends Controller
     |
     */
 
-    use AuthenticatesUsers;
+    //use AuthenticatesUsers;
 
     /**
      * Where to redirect users after login.
@@ -43,7 +44,7 @@ class LoginController extends Controller
     {
         $pwd = $request->input('password');
         $name = $request->input('name');
-        $this->authenticate($pwd);
+        return $this->authenticate($pwd);
     }
 
     /**
@@ -55,6 +56,14 @@ class LoginController extends Controller
     }
 
     /**
+     *  登录界面
+     * */
+    public function showLoginForm()
+    {
+        return view('auth.login');
+    }
+
+    /**
      * 自定义登录验证的字段
      * prams password
      */
@@ -62,7 +71,10 @@ class LoginController extends Controller
     {
         if (Auth::attempt(['email' => '', 'password' => $password])) {
             // 认证通过...
-            return redirect()->intended('dashboard');
+            return redirect()->to();
+        }else{
+            Session::put('error_msg', '用户名或者密码错误');
+            return back();
         }
     }
 
