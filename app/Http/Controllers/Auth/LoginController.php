@@ -4,6 +4,8 @@ namespace App\Http\Controllers\Auth;
 
 use App\Http\Controllers\Controller;
 use Illuminate\Foundation\Auth\AuthenticatesUsers;
+use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Auth;
 
 class LoginController extends Controller
 {
@@ -37,9 +39,31 @@ class LoginController extends Controller
         $this->middleware('guest')->except('logout');
     }
 
+    public function login(Request $request)
+    {
+        $pwd = $request->input('password');
+        $name = $request->input('name');
+        $this->authenticate($pwd);
+    }
+
+    /**
+     * 修改登录需要验证的字段值
+     */
     public function username()
     {
         return 'name';
+    }
+
+    /**
+     * 自定义登录验证的字段
+     * prams password
+     */
+    public function authenticate($password)
+    {
+        if (Auth::attempt(['email' => '', 'password' => $password])) {
+            // 认证通过...
+            return redirect()->intended('dashboard');
+        }
     }
 
 }
