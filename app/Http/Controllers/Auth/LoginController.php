@@ -78,4 +78,23 @@ class LoginController extends Controller
         }
     }
 
+    /**
+     * 退出登录，将所有的 session 信息都删除掉
+     */
+    public function logout(Request $request)
+    {
+        $this->guard()->logout();
+
+        $request->session()->invalidate();
+
+        return redirect('/');
+    }
+
+    protected function guard()
+    {
+        return Auth::guard();
+    }
+
+
+
 }
