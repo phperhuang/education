@@ -19,7 +19,7 @@
 
                                 @error('name')
                                     <span class="invalid-feedback" role="alert">
-                                        <strong>{{ $message }}</strong>
+                                        <strong> 用户名或密码错误，请检查用户名或密码 </strong>
                                     </span>
                                 @enderror
                             </div>
