@@ -4,8 +4,6 @@
 $error_msg = session()->pull('error_msg');
 if($error_msg){
     echo "<javascript>console.log('" . $error_msg . "');</javascript>";
-}else{
-    echo "<javascript>console.log('登录没有问题');</javascript>";
 }
 @endphp
 
