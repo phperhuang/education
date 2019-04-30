@@ -71,9 +71,9 @@ class LoginController extends Controller
     {
         if (Auth::attempt(['password' => $password])) {
             // 认证通过...
-            return redirect()->to();
+            return redirect()->to($this->redirectTo);
         }else{
-            Session::put('error_msg', '用户名或者密码错误');
+            Session::put('error_msg', $password);
             return back();
         }
     }
