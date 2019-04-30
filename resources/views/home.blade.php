@@ -1,6 +1,7 @@
 @extends('layouts.app')
 
 @section('content')
+    <link rel="stylesheet" href="{{ url('css/layui/css/layui.css') }}">
 <div class="container">
     <div class="row justify-content-center">
         <div class="col-md-8">
@@ -14,7 +15,8 @@
                         </div>
                     @endif
 
-                    You are logged in!
+                    You are logged in!<br>
+                        <a href="" class="layui-btn layui-btn-primary">返回主页</a>
                 </div>
             </div>
         </div>
