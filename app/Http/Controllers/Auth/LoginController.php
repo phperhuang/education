@@ -73,7 +73,6 @@ class LoginController extends Controller
             // 认证通过...
             return redirect()->to($this->redirectTo);
         }else{
-            Session::put('error_msg', $password);
             return back();
         }
     }
