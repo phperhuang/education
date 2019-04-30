@@ -92,7 +92,7 @@ class LoginController extends Controller
 
     protected function guard()
     {
-        return Auth::guard();
+        return Auth::guard('users');
     }
 
 
