@@ -29,7 +29,7 @@ class HomeController extends Controller
 
     public function getGuard()
     {
-        var_dump(Auth::guard());
+        var_dump(Auth::id());
         exit;
     }
 
