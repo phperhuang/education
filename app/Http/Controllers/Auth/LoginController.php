@@ -44,7 +44,7 @@ class LoginController extends Controller
     {
         $pwd = $request->input('password');
         $name = $request->input('name');
-        return $this->authenticate($pwd);
+        return $this->authenticate($name, $pwd);
     }
 
     /**
@@ -67,9 +67,9 @@ class LoginController extends Controller
      * 自定义登录验证的字段
      * prams password
      */
-    public function authenticate($password)
+    public function authenticate($name, $password)
     {
-        if (Auth::attempt(['password' => $password])) {
+        if (Auth::attempt(['name' => $name, 'password' => $password])) {
             // 认证通过...
             return redirect()->to($this->redirectTo);
         }else{
